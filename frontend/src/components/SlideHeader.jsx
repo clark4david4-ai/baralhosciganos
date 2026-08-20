@@ -1,7 +1,7 @@
 import React from "react";
-import { Home, Download, BookOpen } from "lucide-react";
+import { Home, Download, BookOpen, Loader2 } from "lucide-react";
 
-const SlideHeader = ({ onIndexOpen, onHome, onDownload }) => {
+const SlideHeader = ({ onIndexOpen, onHome, onDownload, pdfLoading }) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-8 py-6 pointer-events-none">
       <button
@@ -16,10 +16,17 @@ const SlideHeader = ({ onIndexOpen, onHome, onDownload }) => {
       <div className="pointer-events-auto flex items-center gap-8">
         <button
           onClick={onDownload}
-          className="flex items-center gap-2 text-[13px] tracking-[0.28em] uppercase text-[#7A6A55] hover:text-[#4A3728] transition-colors"
+          disabled={pdfLoading}
+          className="flex items-center gap-2 text-[13px] tracking-[0.28em] uppercase text-[#7A6A55] hover:text-[#4A3728] transition-colors disabled:opacity-60 disabled:cursor-wait"
         >
-          <Download className="w-5 h-5" strokeWidth={1.4} />
-          <span className="font-medium">Baixar PDF</span>
+          {pdfLoading ? (
+            <Loader2 className="w-5 h-5 animate-spin" strokeWidth={1.4} />
+          ) : (
+            <Download className="w-5 h-5" strokeWidth={1.4} />
+          )}
+          <span className="font-medium">
+            {pdfLoading ? "Gerando..." : "Baixar PDF"}
+          </span>
         </button>
         <button
           onClick={onIndexOpen}
