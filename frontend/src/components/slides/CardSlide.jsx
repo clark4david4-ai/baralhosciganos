@@ -42,18 +42,18 @@ const CardSlide = ({ data }) => {
 
           {/* Text side */}
           <div>
-            <p className="text-[10px] tracking-[0.4em] uppercase text-[#B8985C] font-sans font-medium">
+            <p className="text-[13px] tracking-[0.4em] uppercase text-[#B8985C] font-sans font-medium">
               Carta {pad(data.cardNumber)} de {data.cardTotal}
             </p>
             <h1
-              className="mt-3 text-5xl md:text-6xl font-normal text-[#3E2C1E] leading-tight"
+              className="mt-3 text-6xl md:text-7xl font-normal text-[#3E2C1E] leading-tight"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               {data.title}
             </h1>
-            <Ornament width={140} />
+            <Ornament width={160} />
             <p
-              className="mt-6 text-[17px] leading-[1.75] text-[#4A3728]"
+              className="mt-6 text-[20px] leading-[1.75] text-[#4A3728]"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               {data.text}

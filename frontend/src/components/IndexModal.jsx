@@ -76,10 +76,10 @@ const IndexModal = ({ open, onClose, onSelect, current }) => {
                           isActive ? "text-[#7A1F1F]" : "text-[#4A3728]"
                         }`}
                       >
-                        <span className="text-[10px] tracking-[0.2em] font-sans font-medium text-[#B8985C] w-6 shrink-0">
+                        <span className="text-[12px] tracking-[0.2em] font-sans font-medium text-[#B8985C] w-8 shrink-0">
                           {pad(n)}
                         </span>
-                        <span className="text-lg leading-snug group-hover:text-[#7A1F1F] transition-colors">
+                        <span className="text-xl leading-snug group-hover:text-[#7A1F1F] transition-colors">
                           {title}
                         </span>
                       </button>

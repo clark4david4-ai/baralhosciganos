@@ -11,23 +11,23 @@ const SlideFooter = ({ current, total, onPrev, onNext }) => {
         <button
           onClick={onPrev}
           disabled={current === 1}
-          className="flex items-center gap-2 px-5 py-2.5 border border-[rgba(184,152,92,0.35)] text-[11px] tracking-[0.28em] uppercase text-[#7A6A55] hover:text-[#4A3728] hover:border-[rgba(184,152,92,0.7)] transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:border-[rgba(184,152,92,0.35)] disabled:hover:text-[#7A6A55]"
+          className="flex items-center gap-2 px-6 py-3 border border-[rgba(184,152,92,0.35)] text-[13px] tracking-[0.28em] uppercase text-[#7A6A55] hover:text-[#4A3728] hover:border-[rgba(184,152,92,0.7)] transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:border-[rgba(184,152,92,0.35)] disabled:hover:text-[#7A6A55]"
         >
-          <ChevronLeft className="w-4 h-4" strokeWidth={1.4} />
+          <ChevronLeft className="w-5 h-5" strokeWidth={1.4} />
           <span className="font-medium">Anterior</span>
         </button>
 
-        <div className="text-[11px] tracking-[0.28em] uppercase text-[#7A6A55] font-medium">
+        <div className="text-[13px] tracking-[0.28em] uppercase text-[#7A6A55] font-medium">
           {pad(current)} · {pad(total)}
         </div>
 
         <button
           onClick={onNext}
           disabled={current === total}
-          className="flex items-center gap-2 px-5 py-2.5 border border-[rgba(184,152,92,0.35)] text-[11px] tracking-[0.28em] uppercase text-[#7A6A55] hover:text-[#4A3728] hover:border-[rgba(184,152,92,0.7)] transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+          className="flex items-center gap-2 px-6 py-3 border border-[rgba(184,152,92,0.35)] text-[13px] tracking-[0.28em] uppercase text-[#7A6A55] hover:text-[#4A3728] hover:border-[rgba(184,152,92,0.7)] transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
         >
           <span className="font-medium">Próximo</span>
-          <ChevronRight className="w-4 h-4" strokeWidth={1.4} />
+          <ChevronRight className="w-5 h-5" strokeWidth={1.4} />
         </button>
       </div>
 

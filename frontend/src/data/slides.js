@@ -66,7 +66,7 @@ export const slides = [
     subtitle: "Le Petit Lenormand",
     description: "Uma apresentação sobre a origem, história e significado das 36 cartas",
     author: "Margarete da Rosa",
-    dedication: "Meu agradecimento a duas pessoas importantes para a realização deste curso e apostila: minha filha Anama Rosa Fetter e minha tia Neura Ferreira Santos.",
+    dedication: "Meu agradecimento à cigana Sarita e à amiga Heloisa, pela inspiração, ensinamentos e caminhada compartilhada nesta jornada.",
   },
   // 2 - O Sigilo
   {
